@@ -32,14 +32,14 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1216"
+     inkscape:window-width="1389"
      inkscape:window-height="1136"
      id="namedview4247"
      showgrid="false"
-     inkscape:zoom="1.5972222"
+     inkscape:zoom="1.9183796"
      inkscape:cx="180"
      inkscape:cy="252"
-     inkscape:window-x="742"
+     inkscape:window-x="167"
      inkscape:window-y="23"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg4245"
@@ -24614,7 +24614,7 @@
        id="path4357" />
   </g>
   <rect
-     style="fill:none;fill-opacity:1;stroke:#1a1a1a;stroke-width:4;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:0.792318;stroke-linejoin:miter"
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:0.98785424;stroke-linejoin:miter"
      id="rect5011"
      width="345.75436"
      height="489.12451"
@@ -29434,7 +29434,7 @@
   </defs>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.6667px;line-height:1.25;font-family:Cochin;-inkscape-font-specification:'Cochin, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.792318"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66669999999999874px;line-height:1.25;font-family:Cochin;-inkscape-font-specification:'Cochin, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.792318;"
      x="96.999565"
      y="445.85657"
      id="text4984"><tspan
@@ -29442,29 +29442,29 @@
        id="tspan4982"
        x="96.999565"
        y="445.85657"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:Cochin;-inkscape-font-specification:'Cochin, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.792318">MONCHIQUE</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:Cochin;-inkscape-font-specification:'Cochin, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.792318;">MONCHIQUE</tspan></text>
   <g
      id="g5009"
      transform="translate(1.2908355,-24)"
-     style="fill:#333333;stroke:#666666">
+     style="fill:none;stroke:#333333">
     <path
-       style="fill:#333333;stroke:#666666;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;stroke:#333333;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        d="m 22.087649,462.60057 c 58.900399,0 58.900399,0 58.900399,0"
        id="path4990" />
     <path
-       style="fill:#333333;stroke:#666666;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;stroke:#333333;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        d="m 276.43028,462.60057 c 58.9004,0 58.9004,0 58.9004,0"
        id="path4990-4" />
   </g>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.6667px;line-height:1.25;font-family:Cochin;-inkscape-font-specification:'Cochin, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.792318"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.66670000000000051px;line-height:1.25;font-family:Cochin;-inkscape-font-specification:'Cochin, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#333333;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.792318;"
      x="118.09805"
      y="473.14444"
      id="text4984-8"><tspan
        sodipodi:role="line"
        x="118.09805"
        y="473.14444"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.6667px;font-family:Cochin;-inkscape-font-specification:'Cochin, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#666666;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.792318"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.66670000000000051px;font-family:Cochin;-inkscape-font-specification:'Cochin, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#333333;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.792318;"
        id="tspan5031">37.317ºN / 8.554ºW</tspan></text>
 </svg>
