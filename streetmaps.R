@@ -1,82 +1,83 @@
 library(tidyverse)
 library(osmdata)
-# available_features()
+theme_set(theme_minimal())
 
 
 # Gather data -------------------------------------------------------------
 
-my_place <- "Monchique Portugal"
+bb <- "Monchique, Portugal" %>%
+  getbb()
 
-# available_tags("highway")
-streets <-
-  my_place %>%
-  getbb() %>%
-  opq() %>%
-  add_osm_feature(
-    key = "highway",
-    value = c(
-      "motorway",
-      "primary",
-      "secondary",
-      "tertiary")) %>%
-  osmdata_sf()
-small_streets <- 
-  my_place %>%
-  getbb() %>%
-  opq() %>%
-  add_osm_feature(
-    key = "highway",
-    value = c(
-      "residential",
-      "living_street",
-      "unclassified",
-      "service",
-      "footway")) %>%
-  osmdata_sf()
+main_highway_tags <- c(
+  "motorway",
+  "primary",
+  "secondary",
+  "tertiary")
 
-# available_tags("building")
-houses <- getbb(my_place) %>%
-  opq() %>%
-  add_osm_feature(key = "building") %>%
-  osmdata_sf()
+other_highway_tags <- 
+  available_tags("highway") %>%
+  setdiff(main_highway_tags)
+
+get_simple_features <- function(bounding_box,
+                                feature,
+                                tags,
+                                what="osm_lines") {
+  if (missing(feature)) 
+    stop("key must be provided")
+  if (missing(tags)) 
+    tags <- NULL
+  bounding_box %>%
+    opq() %>%
+    add_osm_feature(
+      key = feature,
+      value = tags) %>%
+    osmdata_sf() %>%
+    pluck(what)
+}
+
+## query the API
+main_streets <- get_simple_features(bb, "highway", main_highway_tags)
+other_streets <- get_simple_features(bb, "highway", other_highway_tags)
+buildings <- get_simple_features(bb, "building", what = "osm_polygons")
+
+## more features:  
+## available_features()
 
 
 # Plotting ----------------------------------------------------------------
 
-xy_limits <-
-  pluck(streets, "bbox") %>%
-  str_split(",") %>%
-  flatten_chr() %>%
-  as.numeric()
+p <- ggplot(data = main_streets)
 
-ggplot() +
+p <- p +
   geom_sf(
-    data = streets$osm_lines,
-    inherit.aes = FALSE,
     color = "#393b44",
-    size = .8,
-    alpha = .3
-  ) +
+    inherit.aes = FALSE,
+    size = .5)
+
+p <- p +
   geom_sf(
-    data = small_streets$osm_lines,
+    color = "#393b44",
+    size = .3,
     inherit.aes = FALSE,
-    color = "#d6e0f0",
-    # "#ffbe7f",
-    size = .8,
-    alpha = .5
-  ) +  geom_sf(
-    data = houses$osm_polygons,
-    inherit.aes = FALSE,
+    data = other_streets)
+
+p <- p +
+  geom_sf(
     color = "#8d93ab",
     size = .2,
-    alpha = .3
-  ) +  coord_sf(
+    inherit.aes = FALSE,
+    data = buildings)
+
+
+p <- p + 
+  coord_sf(
     xlim = c(-8.565,-8.547),
     ylim = c(37.308, 37.325),
-    expand = FALSE
-  ) + theme_void() + theme(plot.background = element_rect(fill = "white"))
+    expand = FALSE) +
+  theme_void() + 
+  theme(plot.background = element_rect(fill = NA))
 
 
 # Save as -----------------------------------------------------------------
 
-ggsave("monchique_raw.svg", width = 5, height = 7)
+ggsave("raw.svg", p, width = 5, height = 7)

@@ -16,4 +16,3 @@ Distributed under the MIT License.
 - {[ggplot2](https://github.com/tidyverse/ggplot2)}
 - {[osmdata](https://github.com/ropensci/osmdata)}
 - [Inkscape](https://inkscape.org)
-- [Color Hunt](https://colorhunt.co/palette/201686)
