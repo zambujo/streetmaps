@@ -1,6 +1,6 @@
 # Streetmaps
 
-Playing with the [streetmaps tutorial](https://ggplot2tutor.com/streetmaps/streetmaps/).
+Playing with a [streetmaps tutorial](https://ggplot2tutor.com/streetmaps/streetmaps/).
 
 ## Monchique, Portugal
 
